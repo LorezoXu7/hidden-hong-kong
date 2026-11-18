@@ -113,14 +113,14 @@
 
 <script>
 const DATA = [
-  {id:1, cat:"food", title:"深水埗 · 大牌档牛腩面", loc:"深水埗 北河街", price:"HK$40", map:"https://www.google.com/maps/search/?api=1&query=深水埗北河街大牌檔", desc:"由同一家族经营40年的大牌档，牛腩面仍只要港币40元。凌晨仍坐满街坊，是深水埗最真实的烟火气。记得加一勺辣椒酱。", color:"linear-gradient(135deg,#c0392b,#e67e22)"},
-  {id:2, cat:"view", title:"西环泳棚 · 日落海傍", loc:"坚尼地城 域多利道", price:"免费", map:"https://www.google.com/maps/search/?api=1&query=西環泳棚", desc:"上世纪建成的木造泳棚，是香港仅存的几个之一。黄昏时分海面染金，比热门观景台安静得多，拍照打卡必到。", color:"linear-gradient(135deg,#2e86ab,#38d9c4)"},
-  {id:3, cat:"culture", title:"九龙城 · 侯王古庙", loc:"九龙城 联合道", price:"免费", map:"https://www.google.com/maps/search/?api=1&query=九龍城侯王古廟", desc:"逾百年历史的侯王古庙，藏在九龙城闹市之中。庙内的木雕与石湾公仔保存完好，是城市里难得的历史印记。", color:"linear-gradient(135deg,#7d5ba6,#b5838d)"},
-  {id:4, cat:"food", title:"合益泰 · 肠粉", loc:"深水埗 桂林街", price:"HK$12", map:"https://www.google.com/maps/search/?api=1&query=合益泰小食", desc:"米其林推荐的平民肠粉，12元一份滑嫩米肠，淋上甜酱芝麻酱，是深水埗街坊的早餐回忆。", color:"linear-gradient(135deg,#c0392b,#f39c12)"},
-  {id:5, cat:"culture", title:"西营盘 · 艺里坊壁画", loc:"西营盘 忠正街", price:"免费", map:"https://www.google.com/maps/search/?api=1&query=西營盤藝里坊", desc:"本地艺术家的街头壁画群，把平凡的后巷变成露天画廊。每一幅都藏着香港故事，适合慢慢漫步发现。", color:"linear-gradient(135deg,#7d5ba6,#e84393)"},
-  {id:6, cat:"view", title:"大馆 · 天台城市景观", loc:"中环 荷李活道", price:"免费", map:"https://www.google.com/maps/search/?api=1&query=大館", desc:"前中区警署建筑群活化而成的艺文空间，天台可眺望中环天际线，日夜景色各有味道。", color:"linear-gradient(135deg,#2e86ab,#2c3e50)"},
-  {id:7, cat:"culture", title:"上环 · 石板街与文武庙", loc:"上环 荷李活道", price:"免费", map:"https://www.google.com/maps/search/?api=1&query=上環文武廟", desc:"石板街是老香港的缩影，拾级而上便是香火鼎盛的文武庙。串起一段浓缩的港岛历史散步路线。", color:"linear-gradient(135deg,#7d5ba6,#6c5ce7)"},
-  {id:8, cat:"view", title:"南丫岛 · 索罟湾渔村", loc:"离岛 南丫岛", price:"船票HK$18", map:"https://www.google.com/maps/search/?api=1&query=南丫島索罟灣", desc:"从中环坐船40分钟，就能逃离都市。索罟湾的渔村风光、海鲜街与远足径，是香港最治愈的隐世角落。", color:"linear-gradient(135deg,#2e86ab,#00b894)"}
+  {id:1, cat:"food", title:"深水埗 · 大牌档牛腩面", loc:"深水埗 北河街", price:"HK$40", map:"https://www.google.com/maps/search/?api=1&query=深水埗北河街大牌檔", desc:"由同一家族经营40年的大牌档，牛腩面仍只要港币40元。凌晨仍坐满街坊，是深水埗最真实的烟火气。记得加一勺辣椒酱。", img:"https://images.unsplash.com/photo-1774270149411-59e20c04cbb6?w=800&q=80", color:"linear-gradient(135deg,#c0392b,#e67e22)"},
+  {id:2, cat:"view", title:"西环泳棚 · 日落海傍", loc:"坚尼地城 域多利道", price:"免费", map:"https://www.google.com/maps/search/?api=1&query=西環泳棚", desc:"上世纪建成的木造泳棚，是香港仅存的几个之一。黄昏时分海面染金，比热门观景台安静得多，拍照打卡必到。", img:"https://images.unsplash.com/photo-1617154219393-1a84be367f57?w=800&q=80", color:"linear-gradient(135deg,#2e86ab,#38d9c4)"},
+  {id:3, cat:"culture", title:"九龙城 · 侯王古庙", loc:"九龙城 联合道", price:"免费", map:"https://www.google.com/maps/search/?api=1&query=九龍城侯王古廟", desc:"逾百年历史的侯王古庙，藏在九龙城闹市之中。庙内的木雕与石湾公仔保存完好，是城市里难得的历史印记。", img:"https://images.unsplash.com/photo-1748621616756-8b68e32096c8?w=800&q=80", color:"linear-gradient(135deg,#7d5ba6,#b5838d)"},
+  {id:4, cat:"food", title:"合益泰 · 肠粉", loc:"深水埗 桂林街", price:"HK$12", map:"https://www.google.com/maps/search/?api=1&query=合益泰小食", desc:"米其林推荐的平民肠粉，12元一份滑嫩米肠，淋上甜酱芝麻酱，是深水埗街坊的早餐回忆。", img:"https://images.unsplash.com/photo-1774270149411-59e20c04cbb6?w=800&q=80", color:"linear-gradient(135deg,#c0392b,#f39c12)"},
+  {id:5, cat:"culture", title:"西营盘 · 艺里坊壁画", loc:"西营盘 忠正街", price:"免费", map:"https://www.google.com/maps/search/?api=1&query=西營盤藝里坊", desc:"本地艺术家的街头壁画群，把平凡的后巷变成露天画廊。每一幅都藏着香港故事，适合慢慢漫步发现。", img:"https://images.unsplash.com/photo-1748621616756-8b68e32096c8?w=800&q=80", color:"linear-gradient(135deg,#7d5ba6,#e84393)"},
+  {id:6, cat:"view", title:"大馆 · 天台城市景观", loc:"中环 荷李活道", price:"免费", map:"https://www.google.com/maps/search/?api=1&query=大館", desc:"前中区警署建筑群活化而成的艺文空间，天台可眺望中环天际线，日夜景色各有味道。", img:"https://images.unsplash.com/photo-1617154219393-1a84be367f57?w=800&q=80", color:"linear-gradient(135deg,#2e86ab,#2c3e50)"},
+  {id:7, cat:"culture", title:"上环 · 石板街与文武庙", loc:"上环 荷李活道", price:"免费", map:"https://www.google.com/maps/search/?api=1&query=上環文武廟", desc:"石板街是老香港的缩影，拾级而上便是香火鼎盛的文武庙。串起一段浓缩的港岛历史散步路线。", img:"https://images.unsplash.com/photo-1748621616756-8b68e32096c8?w=800&q=80", color:"linear-gradient(135deg,#7d5ba6,#6c5ce7)"},
+  {id:8, cat:"view", title:"南丫岛 · 索罟湾渔村", loc:"离岛 南丫岛", price:"船票HK$18", map:"https://www.google.com/maps/search/?api=1&query=南丫島索罟灣", desc:"从中环坐船40分钟，就能逃离都市。索罟湾的渔村风光、海鲜街与远足径，是香港最治愈的隐世角落。", img:"https://images.unsplash.com/photo-1617154219393-1a84be367f57?w=800&q=80", color:"linear-gradient(135deg,#2e86ab,#00b894)"}
 ];
 
 const CAT_NAMES = {food:"隐藏美食", view:"隐藏美景", culture:"隐藏文化"};
@@ -150,7 +150,7 @@ function render(){
   });
   list.innerHTML = items.map(d => `
     <div class="card" onclick="openDetail(${d.id})">
-      <div class="img" style="background:${d.color}">
+      <div class="img" style="background:linear-gradient(rgba(0,0,0,.15),rgba(0,0,0,.25)),url(${d.img}) center/cover">
         <span class="badge b-${d.cat}">${CAT_NAMES[d.cat]}</span>
         <button class="save" onclick="event.stopPropagation();toggleSave(${d.id})">${saved.includes(d.id)?'❤️':'🤍'}</button>
       </div>
@@ -167,7 +167,7 @@ function openDetail(id){
   const d = DATA.find(x=>x.id===id);
   const cmts = comments[d.id] || [];
   sheet.innerHTML = `
-    <div class="img" style="background:${d.color}"></div>
+    <div class="img" style="background:linear-gradient(rgba(0,0,0,.15),rgba(0,0,0,.25)),url(${d.img}) center/cover"></div>
     <h2>${d.title}</h2>
     <div><span class="tag b-${d.cat}">${CAT_NAMES[d.cat]}</span></div>
     <div class="info">📍 <b>${d.loc}</b><br>💰 <b>${d.price}</b></div>
@@ -228,7 +228,7 @@ document.getElementById("nav-saved").addEventListener("click", ()=>{
   if(!items.length){ alert("还没有收藏任何角落哦～"); return; }
   list.innerHTML = items.map(d=>`
     <div class="card" onclick="openDetail(${d.id})">
-      <div class="img" style="background:${d.color}"><span class="badge b-${d.cat}">${CAT_NAMES[d.cat]}</span><button class="save" onclick="event.stopPropagation();toggleSave(${d.id})">❤️</button></div>
+      <div class="img" style="background:linear-gradient(rgba(0,0,0,.15),rgba(0,0,0,.25)),url(${d.img}) center/cover"><span class="badge b-${d.cat}">${CAT_NAMES[d.cat]}</span><button class="save" onclick="event.stopPropagation();toggleSave(${d.id})">❤️</button></div>
       <div class="body"><h3>${d.title}</h3><div class="loc">📍 ${d.loc} · ${d.price}</div></div>
     </div>`).join("");
 });
